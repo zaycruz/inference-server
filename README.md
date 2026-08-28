@@ -59,6 +59,10 @@ python3 agentic_bench.py                              # realistic agentic bench
 
 ## Also in this repo
 
+- **[deepseek-v4-flash/](deepseek-v4-flash/)** — the tuned DeepSeek-V4-Flash-0731
+  recipe on the same box (FP8 KV, Marlin MoE, DSpark K=5 spec decode; 255 tok/s
+  C1, 1,366 aggregate tok/s C24). Mirror of
+  [zaycruz/deepseek-v4-flash-2x-rtxpro6000-vllm](https://github.com/zaycruz/deepseek-v4-flash-2x-rtxpro6000-vllm).
 - **[glm-5.3-flash-nvfp4/](glm-5.3-flash-nvfp4/)** — deploy template +
   failure matrix for `LibertAIDAI/GLM-5.3-Flash-NVFP4` on the same box.
   Boots and serves on sm120 after several patches, but generation is broken
@@ -69,5 +73,6 @@ python3 agentic_bench.py                              # realistic agentic bench
 
 ```
 qwen3.8-flash-next/   launch.sh, MTP/kernel sweeps, agentic bench, REPORT.md
+deepseek-v4-flash/    tuned DS4 recipe (Dockerfile, patches, bench, raw data)
 glm-5.3-flash-nvfp4/  GLM-5.3 deploy template + sm120 failure matrix
 ```
